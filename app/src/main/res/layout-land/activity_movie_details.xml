@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#191926">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/imageView"
@@ -170,85 +171,85 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="383dp" />
 
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView3"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="4dp"-->
-<!--            android:gravity="center_vertical"-->
-<!--            android:paddingTop="4dp"-->
-<!--            android:paddingBottom="4dp"-->
-<!--            app:layout_constraintBottom_toTopOf="@+id/guideline14"-->
-<!--            app:layout_constraintEnd_toStartOf="@+id/imageView4"-->
-<!--            app:layout_constraintStart_toStartOf="@+id/guideline4"-->
-<!--            app:layout_constraintTop_toTopOf="@+id/guideline13"-->
-<!--            app:layout_constraintVertical_bias="1.0"-->
-<!--            app:srcCompat="@drawable/star_icon" />-->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="@+id/guideline13"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/star_icon" />
 
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView4"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="4dp"-->
-<!--            android:layout_marginTop="4dp"-->
-<!--            android:gravity="center_vertical"-->
-<!--            android:paddingTop="4dp"-->
-<!--            android:paddingBottom="4dp"-->
-<!--            app:layout_constraintBottom_toTopOf="@+id/guideline14"-->
-<!--            app:layout_constraintEnd_toStartOf="@+id/imageView6"-->
-<!--            app:layout_constraintHorizontal_bias="0.5"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/imageView3"-->
-<!--            app:layout_constraintTop_toTopOf="@+id/guideline13"-->
-<!--            app:srcCompat="@drawable/star_icon" />-->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/guideline13"
+            app:srcCompat="@drawable/star_icon" />
 
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView6"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="4dp"-->
-<!--            android:gravity="center_vertical"-->
-<!--            android:paddingTop="4dp"-->
-<!--            android:paddingBottom="4dp"-->
-<!--            app:layout_constraintBottom_toTopOf="@+id/guideline14"-->
-<!--            app:layout_constraintEnd_toStartOf="@+id/imageView7"-->
-<!--            app:layout_constraintHorizontal_bias="0.5"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/imageView4"-->
-<!--            app:layout_constraintTop_toTopOf="@+id/guideline13"-->
-<!--            app:layout_constraintVertical_bias="1.0"-->
-<!--            app:srcCompat="@drawable/star_icon" />-->
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/guideline13"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/star_icon" />
 
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView7"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="4dp"-->
-<!--            android:layout_marginTop="4dp"-->
-<!--            android:gravity="center_vertical"-->
-<!--            android:paddingTop="4dp"-->
-<!--            android:paddingBottom="4dp"-->
-<!--            app:layout_constraintBottom_toTopOf="@+id/guideline14"-->
-<!--            app:layout_constraintEnd_toStartOf="@+id/imageView8"-->
-<!--            app:layout_constraintHorizontal_bias="0.5"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/imageView6"-->
-<!--            app:layout_constraintTop_toTopOf="@+id/guideline13"-->
-<!--            app:layout_constraintVertical_bias="0.0"-->
-<!--            app:srcCompat="@drawable/star_icon" />-->
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+            app:layout_constraintEnd_toStartOf="@+id/imageView8"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/guideline13"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/star_icon" />
 
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView8"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="4dp"-->
-<!--            android:layout_marginTop="4dp"-->
-<!--            android:gravity="center_vertical"-->
-<!--            android:paddingTop="4dp"-->
-<!--            android:paddingBottom="4dp"-->
-<!--            app:layout_constraintBottom_toTopOf="@+id/guideline14"-->
-<!--            app:layout_constraintEnd_toStartOf="@+id/guideline15"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/imageView7"-->
-<!--            app:layout_constraintTop_toTopOf="@+id/guideline13"-->
-<!--            app:layout_constraintVertical_bias="0.0"-->
-<!--            app:srcCompat="@drawable/star_icon_grey" />-->
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+            app:layout_constraintEnd_toStartOf="@+id/guideline15"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/guideline13"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/star_icon_grey" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline15"
@@ -594,16 +595,7 @@
             app:layout_constraintStart_toStartOf="@+id/guideline18"
             app:layout_constraintTop_toTopOf="@+id/guideline27" />
 
-        <RatingBar
-            android:id="@+id/ratingbar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/RedStarRatingBar"
-            android:numStars="5"
-            app:layout_constraintBottom_toTopOf="@+id/guideline14"
-            app:layout_constraintEnd_toStartOf="@+id/guideline19"
-            app:layout_constraintStart_toStartOf="@+id/guideline4"
-            app:layout_constraintTop_toTopOf="@+id/guideline13">
-        </RatingBar>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
