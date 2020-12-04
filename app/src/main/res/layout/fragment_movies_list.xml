@@ -268,17 +268,53 @@
         app:layout_constraintTop_toBottomOf="@+id/name"
         app:layout_constraintVertical_bias="1.0" />
 
-        <View
-            android:id="@+id/bg"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@drawable/bg_movie"
-            android:elevation="24dp"
-            app:layout_constraintBottom_toTopOf="@+id/bottom_movie1"
-            app:layout_constraintEnd_toStartOf="@+id/end_movie1"
-            app:layout_constraintStart_toStartOf="@+id/start_movie1"
-            app:layout_constraintTop_toTopOf="@+id/top_movie1"
-            />
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="@+id/movie1"
+        app:layout_constraintTop_toTopOf="@+id/movie1"
+        app:srcCompat="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="13+"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="12sp"
+        android:fontFamily="@font/roboto_black"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toTopOf="@+id/rectangle" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/bg"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:background="@drawable/bg_movie"-->
+<!--        android:elevation="24dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bottom_movie1"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/end_movie1"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/start_movie1"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/top_movie1"-->
+<!--        />-->
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/movie1"
+        app:layout_constraintTop_toTopOf="@+id/movie1"
+        app:srcCompat="@drawable/like" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

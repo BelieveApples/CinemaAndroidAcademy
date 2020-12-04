@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">CinemaAndroidAcademy</string>
     <string name="avengers_n_end_game">Avengers: \nEnd Game</string>
+    <string name="avengers_nend_game">Avengers: \nEnd Game</string>
 </resources>
