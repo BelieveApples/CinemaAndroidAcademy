@@ -14,6 +14,18 @@
     android:layout_height="match_parent"
     android:background="#191926">
 
+    <ImageView
+        android:id="@+id/bg_movie1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_movie"
+        android:elevation="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_movie1"
+        app:layout_constraintEnd_toEndOf="@+id/end_movie1"
+        app:layout_constraintStart_toStartOf="@+id/start_movie1"
+        app:layout_constraintTop_toTopOf="@+id/top_movie1"
+        />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/g_top_menu_horizontal"
         android:layout_width="wrap_content"
@@ -89,8 +101,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/start_movie1"
         app:layout_constraintTop_toTopOf="@+id/top_movie1"
-        app:srcCompat="@drawable/movie1"
-        android:background=""/>
+        app:srcCompat="@drawable/movie1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/top_movie1"
@@ -293,18 +304,6 @@
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
         app:layout_constraintTop_toTopOf="@+id/rectangle" />
-
-<!--    <ImageView-->
-<!--        android:id="@+id/bg"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:background="@drawable/bg_movie"-->
-<!--        android:elevation="24dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/bottom_movie1"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/end_movie1"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/start_movie1"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/top_movie1"-->
-<!--        />-->
 
     <ImageView
         android:id="@+id/like"

@@ -8,6 +8,7 @@ import android.graphics.LinearGradient
 import android.graphics.Shader
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
 import android.widget.Toast
@@ -15,8 +16,18 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_movies_list)
+        setContentView(R.layout.activity_main)
 
+        val movieContainer = findViewById<ImageView>(R.id.bg_movie1)
+        movieContainer.setOnClickListener { _ ->
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container, FragmentMoviesList())
+                .commit()
+        }
+
+        supportFragmentManager.beginTransaction()
+            .add(R.id.container, FragmentMoviesDetails())
+            .commit()
 //        val textView: TextView = findViewById(R.id.cast)
 //
 //        val shader: Shader = LinearGradient(0f,0f,200f,20f,
