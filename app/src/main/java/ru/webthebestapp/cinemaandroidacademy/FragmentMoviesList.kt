@@ -18,7 +18,7 @@ private var fragmentClickListener: FragmentClickListener? = null
     ): View? {
         val view = inflater.inflate(R.layout.fragment_movies_list, container, false)
 
-        view?.findViewById<ImageView>(R.id.bg_movie1)?.apply {
+        view?.findViewById<ImageView>(R.id.movie1)?.apply {
             setOnClickListener{
                 fragmentClickListener?.onReplaceFragmentClicked()
             }
@@ -39,5 +39,11 @@ private var fragmentClickListener: FragmentClickListener? = null
         fragmentClickListener = null
     }
 
+    companion object {
+        fun newInstance() : FragmentMoviesList {
+            val fragment = FragmentMoviesList()
+            return fragment
+        }
+    }
 
 }

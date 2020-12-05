@@ -15,10 +15,12 @@ class MainActivity : AppCompatActivity(), FragmentClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportFragmentManager.beginTransaction()
-            .addToBackStack(null)
-            .add(R.id.container, FragmentMoviesList())
-            .commit()
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                    .addToBackStack(null)
+                    .add(R.id.container, FragmentMoviesList())
+                    .commit()
+        }
 
 //        val textView: TextView = findViewById(R.id.cast)
 //
@@ -32,11 +34,18 @@ class MainActivity : AppCompatActivity(), FragmentClickListener {
     override fun onReplaceFragmentClicked() {
         supportFragmentManager.beginTransaction()
             .addToBackStack(null)
-            .add(R.id.container, FragmentMoviesDetails())
+            .replace(R.id.container, FragmentMoviesDetails())
             .commit()
+    }
+
+    override fun onBackFragmentClicked() {
+        supportFragmentManager.beginTransaction()
+                .remove(FragmentMoviesList())
+                .commit()
     }
 }
 
 interface FragmentClickListener {
     fun onReplaceFragmentClicked()
+    fun onBackFragmentClicked()
 }
