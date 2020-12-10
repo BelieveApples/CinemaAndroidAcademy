@@ -22,10 +22,14 @@ class FragmentMoviesDetails : Fragment() {
         val view = inflater.inflate(R.layout.fragment_movies_details, container, false)
 
         view?.findViewById<TextView>(R.id.tv_back)?.apply {
-            fragmentClickListener?.onBackFragmentClicked()
+            setOnClickListener {
+                fragmentClickListener?.onBackFragmentClicked()
+            }
         }
         view?.findViewById<ImageView>(R.id.iv_back)?.apply {
-            fragmentClickListener?.onBackFragmentClicked()
+            setOnClickListener {
+                fragmentClickListener?.onBackFragmentClicked()
+            }
         }
 
 
@@ -42,5 +46,12 @@ class FragmentMoviesDetails : Fragment() {
     override fun onDetach() {
         super.onDetach()
         fragmentClickListener = null
+    }
+
+    companion object {
+        fun newInstance() : FragmentMoviesDetails {
+            val fragment = FragmentMoviesDetails()
+            return fragment
+        }
     }
 }

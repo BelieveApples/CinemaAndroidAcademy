@@ -16,7 +16,7 @@ private var fragmentClickListener: FragmentClickListener? = null
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_movies_list, container, false)
+        val view = inflater.inflate(R.layout.view_holder_movie, container, false)
 
         view?.findViewById<ImageView>(R.id.movie1)?.apply {
             setOnClickListener{

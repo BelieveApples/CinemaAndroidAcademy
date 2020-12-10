@@ -39,9 +39,7 @@ class MainActivity : AppCompatActivity(), FragmentClickListener {
     }
 
     override fun onBackFragmentClicked() {
-        supportFragmentManager.beginTransaction()
-                .remove(FragmentMoviesList())
-                .commit()
+        supportFragmentManager.popBackStack()
     }
 }
 
