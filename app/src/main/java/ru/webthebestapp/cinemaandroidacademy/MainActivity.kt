@@ -22,13 +22,7 @@ class MainActivity : AppCompatActivity(), FragmentClickListener {
                     .commit()
         }
 
-//        val textView: TextView = findViewById(R.id.cast)
-//
-//        val shader: Shader = LinearGradient(0f,0f,200f,20f,
-//                intArrayOf(Color.rgb(236, 236, 236), Color.rgb(196,196,196), Color.rgb(255,255,255)),
-//                null,
-//        Shader.TileMode.CLAMP)
-//        textView.paint.setShader(shader)
+
     }
 
     override fun onReplaceFragmentClicked() {
@@ -39,7 +33,10 @@ class MainActivity : AppCompatActivity(), FragmentClickListener {
     }
 
     override fun onBackFragmentClicked() {
-        supportFragmentManager.popBackStack()
+        supportFragmentManager.beginTransaction()
+            .addToBackStack(null)
+            .replace(R.id.container, FragmentMoviesList())
+            .commit()
     }
 }
 

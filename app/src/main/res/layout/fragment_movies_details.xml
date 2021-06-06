@@ -416,125 +416,14 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="585dp" />
 
-        <ImageView
-            android:id="@+id/robert_image"
-            android:layout_width="wrap_content"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_actors"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/guideline9"
-            app:layout_constraintEnd_toStartOf="@+id/evans_image"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="@+id/guideline4"
-            app:layout_constraintTop_toTopOf="@+id/guideline3"
-            app:srcCompat="@drawable/movie_robert" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="665dp" />
-
-        <ImageView
-            android:id="@+id/evans_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/guideline9"
-            app:layout_constraintEnd_toStartOf="@+id/mark_image"
-            app:layout_constraintStart_toEndOf="@+id/robert_image"
-            app:layout_constraintTop_toTopOf="@+id/guideline3"
-            app:srcCompat="@drawable/movie_chris" />
-
-        <ImageView
-            android:id="@+id/mark_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/guideline9"
-            app:layout_constraintEnd_toStartOf="@+id/chris_image"
-            app:layout_constraintStart_toEndOf="@+id/evans_image"
-            app:layout_constraintTop_toTopOf="@+id/guideline3"
-            app:srcCompat="@drawable/movie_mark" />
-
-        <ImageView
-            android:id="@+id/chris_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/guideline9"
             app:layout_constraintEnd_toStartOf="@+id/guideline5"
-            app:layout_constraintStart_toEndOf="@+id/mark_image"
-            app:layout_constraintTop_toTopOf="@+id/guideline3"
-            app:srcCompat="@drawable/movie_thor" />
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline28"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="703dp" />
-
-        <TextView
-            android:id="@+id/tv_robert"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="6dp"
-            android:fontFamily="@font/roboto_black"
-            android:gravity="center_vertical"
-            android:lineSpacingExtra="2sp"
-            android:text="Robert Downey Jr."
-            android:textColor="#D8D8D8"
-            android:textSize="12sp"
-            app:layout_constrainedWidth="true"
-            app:layout_constraintBottom_toTopOf="@+id/guideline28"
-            app:layout_constraintEnd_toEndOf="@+id/robert_image"
-            app:layout_constraintStart_toStartOf="@id/robert_image"
-            app:layout_constraintTop_toBottomOf="@+id/robert_image" />
-
-        <TextView
-            android:id="@+id/tv_evans"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="6dp"
-            android:fontFamily="@font/roboto_black"
-            android:gravity="center_vertical"
-            android:lineSpacingExtra="2sp"
-            android:text="Chris Evans"
-            android:textColor="#D8D8D8"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline28"
-            app:layout_constraintEnd_toEndOf="@+id/evans_image"
-            app:layout_constraintStart_toStartOf="@+id/evans_image"
-            app:layout_constraintTop_toTopOf="@+id/guideline9" />
-
-        <TextView
-            android:id="@+id/tv_mark"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="6dp"
-            android:fontFamily="@font/roboto_black"
-            android:gravity="center_vertical"
-            android:lineSpacingExtra="2sp"
-            android:text="Mark Ruffalo"
-            android:textColor="#D8D8D8"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline28"
-            app:layout_constraintEnd_toEndOf="@+id/mark_image"
-            app:layout_constraintStart_toStartOf="@+id/mark_image"
-            app:layout_constraintTop_toBottomOf="@+id/mark_image"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/tv_chris"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:fontFamily="@font/roboto_black"
-            android:gravity="center_vertical"
-            android:lineSpacingExtra="2sp"
-            android:text="Chris Hemsworth"
-            android:textColor="#D8D8D8"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline28"
-            app:layout_constraintEnd_toEndOf="@+id/chris_image"
-            app:layout_constraintStart_toStartOf="@+id/chris_image"
-            app:layout_constraintTop_toBottomOf="@+id/chris_image" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

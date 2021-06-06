@@ -11,6 +11,6 @@
         android:startY="149"
         android:endX="281.25"
         android:endY="149"
-        >
+        android:angle="270">
     </gradient>
 </shape>
